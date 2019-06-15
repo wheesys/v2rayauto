@@ -108,7 +108,9 @@ chmod u+x ~/go.sh
 sudo bash ~/go.sh
 new_uuid=`cat /proc/sys/kernel/random/uuid`
 sudo cp /etc/v2ray/config.json /etc/v2ray/config.json.bak
-echo "your server port is $server_port, id is $new_uuid"
 sudo sed -i "s/\"port\":.*/\"port\": $server_port,/g" /etc/v2ray/config.json
 sudo sed -i "s/\"id\":.*/\"id\": \"$new_uuid\",/g" /etc/v2ray/config.json
 sudo systemctl restart v2ray
+
+echo "\n\n\n\n"
+echo "your server port is $server_port, id is $new_uuid"
