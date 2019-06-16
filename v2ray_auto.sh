@@ -1,4 +1,4 @@
-echo "first thx v2ray白话文教程 address is  https://toutyrater.github.io/"
+echo "first thanks v2ray白话文教程 address is  https://toutyrater.github.io/"
 echo "this script do things below "
 echo "will check your syetem had install wget, if not, install"
 echo "will modify /etc/v2ray/config.json"
